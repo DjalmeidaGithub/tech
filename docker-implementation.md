@@ -13,28 +13,28 @@
 ## 2. Download Docker Desktop
 
 - Go to the official Docker website:  
-  [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)[web:12].
+  [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 - Click **Download for Windows**.
-
+- Use this link to get more tutorials about docker:[https://www.docker.com/trainings/]
 ---
 
 ## 3. Run the Installer
 
-- Locate the downloaded file (`Docker Desktop Installer.exe`), then double-click it to launch the installer[web:11][web:13].
-- When prompted, enable WSL 2 or Hyper-V (choose the option best suited for your system)[web:12].
+- Locate the downloaded file (`Docker Desktop Installer.exe`), then double-click it to launch the installer
+- When prompted, enable WSL 2 or Hyper-V (choose the option best suited for your system).
 - Follow the on-screen wizard to complete installation.
 
 ---
 
 ## 4. Restart Your Computer
 
-- After setup finishes, restart your computer if required[web:13].
+- After setup finishes, restart your computer if required.
 
 ---
 
 ## 5. Launch Docker Desktop
 
-- Open Docker Desktop from the Start Menu[web:14].
+- Open Docker Desktop from the Start Menu.
 - The Docker whale icon should appear in the taskbar.
 
 ---
@@ -46,7 +46,7 @@
 
 docker --version
 
-- You should see the installed Docker version[web:12][web:14].
+- You should see the installed Docker version.
 
 ---
 
