@@ -1,3 +1,109 @@
+# Install Docker on Windows
+
+---
+
+## 1. Check System Requirements
+
+- Windows 10 or 11, 64-bit.
+- At least 4 GB RAM.
+- Virtualization enabled in BIOS[web:11][web:12].
+
+---
+
+## 2. Download Docker Desktop
+
+- Go to the official Docker website:  
+  [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)[web:12].
+- Click **Download for Windows**.
+
+---
+
+## 3. Run the Installer
+
+- Locate the downloaded file (`Docker Desktop Installer.exe`), then double-click it to launch the installer[web:11][web:13].
+- When prompted, enable WSL 2 or Hyper-V (choose the option best suited for your system)[web:12].
+- Follow the on-screen wizard to complete installation.
+
+---
+
+## 4. Restart Your Computer
+
+- After setup finishes, restart your computer if required[web:13].
+
+---
+
+## 5. Launch Docker Desktop
+
+- Open Docker Desktop from the Start Menu[web:14].
+- The Docker whale icon should appear in the taskbar.
+
+---
+
+## 6. Verify Installation
+
+- Open a terminal (Command Prompt or PowerShell).
+- Run:
+
+docker --version
+
+- You should see the installed Docker version[web:12][web:14].
+
+---
+
+Docker is now ready to use!
+
+# How to Access a GitHub Repo in Visual Studio
+
+This guide shows how to set up Visual Studio to access and work with the repository:  
+`https://github.com/DjalmeidaGithub/tech/blob/main/docker-implementation.md`
+
+---
+
+## 1. Link Your GitHub Account to Visual Studio
+
+- Open Visual Studio.
+- Go to **File > Account Settings**.
+- Add your GitHub account and sign in with your GitHub credentials.
+
+---
+
+## 2. Clone the Repository
+
+- Go to **File > Open > Project from Source Control**.
+- Select **Git**.
+- Enter this repository URL:  
+
+https://github.com/DjalmeidaGithub/tech.git
+
+- Click **Clone**.
+
+---
+
+## 3. Open, Edit, and Sync
+
+- After cloning, Visual Studio will open the repository as a local project.
+- Browse the folders and open any file, such as `docker-implementation.md`.
+- Make edits, commit changes, and push updates using the built-in Git window (**Git Changes**).
+
+---
+
+## 4. Git Workflow Features in Visual Studio
+
+- **Branching:** Create and switch branches from the status bar.
+- **Committing:** Edit files and commit changes directly.
+- **Syncing:** Push and pull with GitHub easily.
+- **Pull Requests:** Use Visual Studio's interface to make pull requests for collaborative work.
+
+---
+
+## Notes
+
+- Ensure Git is installed (Visual Studio will prompt you if it’s missing).
+- Your GitHub account should be authorized as described in Step 1.
+- Visual Studio supports markdown editing and is suitable for collaboration on `.md` files.
+
+---
+
 # Docker Implementation on Windows Laptop: Frontend, Backend, and PostgreSQL
 
 This guide provides a detailed, step-by-step process for setting up a Dockerized frontend and backend application connected to a PostgreSQL database on a Windows laptop. 
@@ -56,7 +162,7 @@ myapp/
 ### 2.2. Backend Dockerfile (Python/Flask Example)
 
 Use an official Python runtime as a parent image
-
+```
 FROM python:3.9-slim
 Set the working directory in the container
 
@@ -78,10 +184,13 @@ Run app.py when the container launches
 
 CMD ["flask", "run", "--host", "0.0.0.0"]
 
+```
+
 ### 2.3. Frontend Dockerfile (React Example)
 
 Use an official Node runtime as a parent image
 
+```
 FROM node:16-alpine
 Set the working directory in the container
 
@@ -102,9 +211,11 @@ Serve the app
 
 EXPOSE 3000
 CMD ["npm", "start"]
+```
 
 ### 2.4. Docker Compose File
 
+```
 version: '3.8'
 
 services:
@@ -146,6 +257,7 @@ networks:
 mynetwork:
 driver: bridge
 
+```
 ---
 
 ## 3. Build and Run the Containers
