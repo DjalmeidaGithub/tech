@@ -121,24 +121,24 @@ The project structure includes a frontend, backend, and PostgreSQL database, all
 
 ### 1.2. Enable WSL 2 (Windows Subsystem for Linux)
 - Open PowerShell as Administrator and run:
-
+```
 wsl --install
 
 - Restart your computer if prompted.
 - Set WSL 2 as the default version:
 
 wsl --set-default-version 2
-
+```
 ### 1.3. Enable Virtualization
 - Ensure virtualization is enabled in your BIOS/UEFI settings.
 - In Windows, enable the "Windows Subsystem for Linux" and "Virtual Machine Platform" features via **Turn Windows features on or off**.
 
 ### 1.4. Verify Installation
 - Open a command prompt and run:
-
+```
 docker --version
 docker-compose --version
-
+```
 - If both commands return version numbers, Docker is installed correctly.
 
 ---
@@ -264,9 +264,9 @@ driver: bridge
 
 ### 3.1. Build and Start the Containers
 - Open a command prompt in the root folder and run:
-
+```
 docker-compose up --build
-
+```
 - This will build the images, create the containers, and start them.
 
 ### 3.2. Access the Services
@@ -276,9 +276,9 @@ docker-compose up --build
 
 ### 3.3. Stop the Containers
 - Press `Ctrl+C` in the terminal, then run:
-
+```
 docker-compose down
-
+```
 
 ---
 
@@ -292,7 +292,7 @@ git init
 
 ### 4.2. Create a .gitignore File
 Add the following contents to ignore Docker and local files:
-
+```
 Docker
 
 .env
@@ -307,17 +307,17 @@ IDE
 
 .idea/
 .vscode/
-
+```
 
 ### 4.3. Commit and Push to GitHub
 Run the following commands:
-
+```
 git add .
 git commit -m "Initial Docker setup for frontend and backend with PostgreSQL"
 git branch -M main
 git remote add origin https://github.com/yourusername/your-repo.git
 git push -u origin main
-
+```
 
 ---
 
@@ -327,24 +327,24 @@ git push -u origin main
 - Edit your frontend or backend code as needed.
 
 ### 5.2. Rebuild and Restart Containers
-
+```
 docker-compose build
 docker-compose up
-
+```
 
 ### 5.3. Commit and Push Changes
-
+```
 git add .
 git commit -m "Updated frontend UI"
 git push
-
+```
 
 ### 5.4. Pull Changes on Another Machine
-
+```
 git pull
 docker-compose build
 docker-compose up
-
+```
 
 ---
 
