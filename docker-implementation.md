@@ -1,6 +1,7 @@
 # Docker Implementation on Windows Laptop: Frontend, Backend, and PostgreSQL
 
-This guide provides a detailed, step-by-step process for setting up a Dockerized frontend and backend application connected to a PostgreSQL database on a Windows laptop. It also includes instructions for setting up the project on GitHub for collaborative changes.
+This guide provides a detailed, step-by-step process for setting up a Dockerized frontend and backend application connected to a PostgreSQL database on a Windows laptop. 
+It also includes instructions for setting up the project on GitHub for collaborative changes.
 
 The project structure includes a frontend, backend, and PostgreSQL database, all connected via a Docker network.
 
@@ -39,7 +40,7 @@ docker-compose --version
 ## 2. Create a Dockerized Frontend and Backend with PostgreSQL
 
 ### 2.1. Project Structure
-
+```
 myapp/
 ├── backend/
 │ ├── Dockerfile
@@ -50,7 +51,7 @@ myapp/
 │ └── (your frontend code)
 ├── docker-compose.yml
 └── .env (optional)
-
+```
 
 ### 2.2. Backend Dockerfile (Python/Flask Example)
 
@@ -241,5 +242,3 @@ docker-compose up
 - **Docker Desktop issues:** Restart Docker Desktop if containers fail to start.
 
 ---
-
-You can copy this Markdown into a `.md` file and use it directly! Let me know if you need any further customization or additional details.
