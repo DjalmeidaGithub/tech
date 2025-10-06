@@ -1,8 +1,6 @@
-# Designing a Simple, Robust, and Scalable WMS Architecture on Azure with Reflex
+# Designing a Simple WMS Architecture on Azure with Reflex
 
 In this tutorial, we’ll explore how to design a Warehouse Management System (WMS) on Microsoft Azure using Windows Server instances running Reflex. We'll focus on keeping the design simple, yet robust and scalable, so it can grow with your business needs and remain reliable.
-
-Whether you’re an IT professional, a developer, or a system architect, this guide will explain key Azure components and design principles using straightforward terms, as if you were teaching someone else.
 
 ---
 
