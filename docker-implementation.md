@@ -354,3 +354,8 @@ docker-compose up
 - **Docker Desktop issues:** Restart Docker Desktop if containers fail to start.
 
 ---
+
+# Follow me at
+- Newsletter: https://diamantinoalmeida.substack.com
+- Website: https://diamantinoalmeida.com
+- Mentorship: https://mentorcruise.com/mentor/diamantinoalmeida/
