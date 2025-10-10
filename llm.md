@@ -1,4 +1,4 @@
-# Understanding and Implementing AI Language Models: A Practical Guide for Your Business
+# A Practical Guide for Your Business With LLMs
 
 ## Let's Talk About Large Language Models (LLMs)
 
