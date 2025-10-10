@@ -275,3 +275,8 @@ Implementing language models—whether large or small—is about finding the rig
 
 You can **harness the power of AI while minimizing risks and maximizing value** for your business.
 
+Follow me at:
+
+- Newsletter: [https://diamantinoalmeida.substack.com](https://diamantinoalmeida.substack.com)  
+- Website: [https://diamantinoalmeida.com](https://diamantinoalmeida.com)  
+- Mentorship: [https://mentorcruise.com/mentor/diamantinoalmeida/](https://mentorcruise.com/mentor/diamantinoalmeida/)
